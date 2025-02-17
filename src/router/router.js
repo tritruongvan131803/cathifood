@@ -8,11 +8,23 @@ import Lienhe from "../components/Lienhe.vue";
 import Dangki from "../components/Dangki.vue";
 import Dangnhap from "../components/Dangnhap.vue";
 import Quenmatkhau from "../components/Quenmatkhau.vue";
+import UpdateUser from "../components/UpdateUser.vue";
+import App from "../App.vue";
 const routes = [
   {
     path: "/Home",
     name: "Home",
     component: Home,
+  },
+  {
+    path: "/",
+    name: "App",
+    component: App,
+  },
+  {
+    path: "/Header",
+    name: "Header",
+    component: Header,
   },
   {
     path: "/Sanpham",
@@ -48,6 +60,11 @@ const routes = [
     path: "/forgotpassword",
     name: "Quenmatkhau",
     component: Quenmatkhau,
+  },
+  {
+    path: "/UpdateUser/:id",
+    name: "UpdateUser",
+    component: UpdateUser,
   },
 ];
 

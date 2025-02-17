@@ -167,6 +167,7 @@
         .header-left img {
           width: 60%;
           height: 80%;
+          margin-top:10px ;
           margin-left: 40px;
         }
         .header-center {
@@ -196,6 +197,7 @@
         }
         .header-right .icon {
           list-style: none;
+          margin-top: 7px;
           display: inline-flex;
           font-size: 30px;
         }
@@ -223,6 +225,7 @@
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
           white-space: nowrap;
           z-index: 10;
+         
         }
         .tooltip::before{
           content: "";
@@ -230,6 +233,7 @@
           top: -22px; 
           left: 50%; 
           transform: translateX(420%);
+      
           width: 20px;
           height: 20px;
           background-color: #ddd;
@@ -250,4 +254,5 @@
         }
         .icon-container:hover .tooltip {
           display: block;
+          
         }

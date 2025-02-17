@@ -43,7 +43,6 @@
     <br />
     <br />
     <br />
-    <Footer></Footer>
   </div>
 </template>
 
@@ -52,9 +51,6 @@ import axios from "axios";
 import { RouterLink } from "vue-router";
 import Footer from "./Footer.vue";
 export default {
-  components: {
-    Footer,
-  },
   data() {
     return {
       form: {

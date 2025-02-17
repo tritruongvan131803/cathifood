@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+     <div class="header">
     <div class="header-left">
       <RouterLink to="/Home">
         <img
@@ -23,16 +23,14 @@
       <ul class="icon">
         <li><i class="bx bx-search"></i></li>
         <div class="icon-container">
-          <RouterLink to="/register">
-            <li><i class="bx bx-user"></i></li
-          ></RouterLink>
+          <RouterLink to="/register"><li class=""><i class="bx bx-user"></i></li></RouterLink>
           <div class="tooltip">
             <h3>THÔNG TIN TÀI KHOẢN</h3>
             <hr />
             <br />
             <p class="user-name">{{ userName }}</p>
             <ul>
-             <router-link to="UpdateUser" + userId > <li>Cập nhật thông tin</li></router-link>
+               <router-link :to="'/UpdateUser/'+ userId" style="text-decoration: none; color: black;" ><li>Cập nhật thông tin</li></router-link>
               <li>Danh sách địa chỉ</li>
               <li @click="btndangxuat()">Đăng xuất</li>
             </ul>
@@ -72,3 +70,5 @@ export default {
   },
 };
 </script>
+
+

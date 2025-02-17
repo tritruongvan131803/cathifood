@@ -53,7 +53,6 @@
     <br />
     <br />
     <br />
-    <Footer></Footer>
   </div>
 </template>
 
@@ -63,9 +62,6 @@ import Footer from "./Footer.vue";
 import axios from "axios";
 import Swal from "sweetalert2";
 export default {
-  components: {
-    Footer,
-  },
   data() {
     return {
       form: {

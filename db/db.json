@@ -19,13 +19,10 @@
       "matkhau": "@Tritruong2003"
     },
     {
-      "id": "0b57",
-      "firstname": "vy",
-      "lastname": "Trần",
-      "gioitinh": "Nữ",
-      "date": "2003-12-13",
+      "name": "Trần Thị Thảo Vy",
       "email": "vy@gmail.com",
-      "matkhau": "123"
+      "matkhau": "123",
+      "id": "0b57"
     },
     {
       "id": "36ca",
@@ -122,6 +119,18 @@
       "date": "1004-03-13",
       "email": "vya@gmail.com",
       "matkhau": "1"
+    },
+    {
+      "name": "Trần Lê Miên Thảo",
+      "email": "thao@gmail.com",
+      "matkhau": "1",
+      "id": "db6a"
+    },
+    {
+      "name": "Trần Văn A",
+      "email": "a@gmail.com",
+      "matkhau": "a",
+      "id": "9c38"
     }
   ]
 }
