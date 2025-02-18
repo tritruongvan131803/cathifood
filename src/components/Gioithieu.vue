@@ -58,41 +58,196 @@ import { RouterLink } from "vue-router";
       <H2 style="text-align: center">CAM KẾT VỚI KHÁCH HÀNG</H2>
     </div>
     <div class="column">
-        <div class="columnleft">
+      <div class="columnleft">
+        <div class="abc">
+          <img
+            src="https://theme.hstatic.net/200000418743/1001254066/14/about02_ecosystem_1_ico.png?v=356"
+            alt=""
+          />
+          <div class="nlcl">
+            <h1>Nguyên liệu chọn lọc</h1>
+            <p>
+              Sử dụng những nguyên liệu tươi ngon và chất lượng nhất từ vùng đất
+              hội tụ sự tinh túy của thiên nhiên và bàn tay khéo léo của người
+              dân. Mỗi nguyên liệu đều được tuyển chọn kỹ lưỡng, đảm bảo nguồn
+              gốc rõ ràng và đạt tiêu chuẩn an toàn thực phẩm.
+            </p>
+          </div>
         </div>
-        <div class="columncenter">
-            <img src="https://theme.hstatic.net/200000418743/1001254066/14/about02_ecosystem_img.jpg?v=356" alt="">
+        <div class="abc">
+          <img
+            src="https://theme.hstatic.net/200000418743/1001254066/14/about02_ecosystem_2_ico.png?v=356"
+            alt=""
+          />
+          <div class="nlcl">
+            <h1>Công nghệ hiện đại</h1>
+            <p>
+              Ứng dụng công nghệ, trang thiết bị tiên tiến trong sản xuất, bảo
+              quản và đóng gói, giúp giữ trọn vẹn hương vị và giá trị dinh
+              dưỡng, tối ưu hóa quy trình, nâng cao hiệu quả.
+            </p>
+          </div>
         </div>
-        <div class="columnright">
+        <div class="abc">
+          <img
+            src="https://theme.hstatic.net/200000418743/1001254066/14/about02_ecosystem_3_ico.png?v=356"
+            alt=""
+          />
+          <div class="nlcl">
+            <h1>Vẹn nguyên hương vị</h1>
+            <p>
+              Mỗi sản phẩm là sự kết tinh của nguyên liệu tươi mới và công thức
+              chế biến độc đáo, mang đến hương vị đậm đà, thơm ngon như vừa được
+              nấu.
+            </p>
+          </div>
         </div>
+      </div>
+      <div class="columncenter">
+        <img
+          src="https://theme.hstatic.net/200000418743/1001254066/14/about02_ecosystem_img.jpg?v=356"
+          alt=""
+        />
+      </div>
+      <div class="columnright">
+        <div class="abc">
+          <div class="nlcl">
+            <h1>Không lạm dụng hoá chất</h1>
+            <p>
+              Chúng tôi ưu tiên các phương pháp chế biến tự nhiên, hạn chế tối
+              đa việc sử dụng hóa chất và phụ gia nhân tạo, đảm bảo sản phẩm an
+              lành, tốt cho sức khỏe người dùng.
+            </p>
+          </div>
+          <img
+            src="https://theme.hstatic.net/200000418743/1001254066/14/about02_ecosystem_4_ico.png?v=356"
+            alt=""
+          />
+        </div>
+        <div class="abc">
+          <div class="nlcl">
+            <h1>Đậm đà văn hoá</h1>
+            <p>
+              Từng món ăn không chỉ mang hương vị đặc trưng của Hội An mà còn kể
+              câu chuyện về nền văn hóa giàu bản sắc, giúp khách hàng cảm nhận
+              sâu sắc tinh thần và phong vị truyền thống Việt Nam.
+            </p>
+          </div>
+          <img
+            src="https://theme.hstatic.net/200000418743/1001254066/14/about02_ecosystem_5_ico.png?v=356"
+            alt=""
+          />
+        </div>
+        <div class="abc">
+          <div class="nlcl">
+            <h1>An toàn thực phẩm</h1>
+            <p>
+              Sản phẩm của được thiết kế để vừa đảm bảo an toàn thực phẩm, vừa
+              tiện lợi trong sử dụng, phù hợp với nhịp sống hiện đại.
+            </p>
+          </div>
+          <img
+            src="https://theme.hstatic.net/200000418743/1001254066/14/about02_ecosystem_6_ico.png?v=356"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="lienhe">
+      <div class="lienhe4">
+        <img src="https://theme.hstatic.net/200000418743/1001254066/14/about02_services_1_ico.png?v=356" alt="">
+      <h1>Đa dạng cách thức mua hàng</h1>
+      <p>Website / TikTok Shop / Shopee / Facebook</p>
+      </div>
+      <div class="lienhe4">
+        <img src="https://theme.hstatic.net/200000418743/1001254066/14/about02_services_2_ico.png?v=356" alt="">
+      <h1>Giao hàng nhanh chóng</h1>
+      <p>Thời gian giao hàng từ 1 - 3 ngày làm việc</p>
+      </div>
+      <div class="lienhe4">
+        <img src="https://theme.hstatic.net/200000418743/1001254066/14/about02_services_3_ico.png?v=356" alt="">
+      <h1>Thanh toán tiện lợi</h1>
+      <p>Chấp nhận thanh toán COD, VN Pay, Momo</p>
+      </div>
+      <div class="lienhe4">
+        <img src="https://theme.hstatic.net/200000418743/1001254066/14/about02_services_4_ico.png?v=356" alt="">
+      <h1>Đổi trả dễ dàng</h1>
+      <p>Thời gian trả hàng lên tới 7 ngày</p>
+      </div>
     </div>
   </div>
 </template>
 
 <style>
-.column{
-    display: flex;
-    width: 100%;
-    height: 600px;
+.lienhe{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
-.columnleft{
-    width: 35%;
-    background-color: #0c411e;
+.lienhe4{
+  text-align: center;
+  padding: 20px 60px;
 }
-.columncenter{
-    width: 30%;
-    display: flex;
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
+.lienhe4 h1{
+color: #2e3191;
+font-size: 16px;
 }
-.columncenter img{
-width: 90%;
-height: 60%;
-
+.lienhe4 img{
+  width: 40px;
+  height: 50px;
+  transition: transform 0.5s ease-in-out;
 }
-.columnright{
-    width: 40%;
-    background-color: #81671d;
+.lienhe4 img:hover{
+  transform: rotateY(360deg);
+}
+.column {
+  display: flex;
+}
+.columnleft {
+  width: 35%;
+  margin-top: 50px;
+}
+.abc {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+.columnleft img {
+  width: 70px;
+  height: 60px;
+  margin-right: 20px;
+}
+.nlcl h1 {
+  color: #2e3191;
+  font-size: 18px;
+}
+.columnright img {
+  width: 70px;
+  height: 60px;
+}
+.columnright .abc {
+  margin-left: 0;
+  margin-right: 60px;
+}
+.columncenter {
+  width: 30%;
+  display: flex;
+  margin: 0 15px;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+.columncenter img {
+  width: 95%;
+  height: 80%;
+}
+.columnright {
+  margin-top: 50px;
+  width: 35%;
+}
+.columnright .nlcl {
+  margin-right: 20px;
 }
 .nguyenlieu {
   margin-top: 100px;

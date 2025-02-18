@@ -17,11 +17,6 @@ const routes = [
     component: Home,
   },
   {
-    path: "/",
-    name: "App",
-    component: App,
-  },
-  {
     path: "/Header",
     name: "Header",
     component: Header,
