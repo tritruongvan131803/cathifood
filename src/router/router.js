@@ -1,5 +1,4 @@
 import { createWebHistory, createRouter } from "vue-router";
-import Header from "../components/Header.vue";
 import Home from "../components/Home.vue";
 import Sanpham from "../components/Sanpham.vue";
 import Gioithieu from "../components/Gioithieu.vue";
@@ -10,16 +9,16 @@ import Dangnhap from "../components/Dangnhap.vue";
 import Quenmatkhau from "../components/Quenmatkhau.vue";
 import UpdateUser from "../components/UpdateUser.vue";
 import App from "../App.vue";
+import Combo from "../product/Combo.vue";
+import Chedaudo from "../product/Chedaudo.vue";
+import Chebap from "../product/Chebap.vue";
+import Chemeden from "../product/Chemeden.vue";
+import Chethapcam from "../product/Chethapcam.vue";
 const routes = [
   {
     path: "/Home",
     name: "Home",
     component: Home,
-  },
-  {
-    path: "/Header",
-    name: "Header",
-    component: Header,
   },
   {
     path: "/Sanpham",
@@ -56,6 +55,32 @@ const routes = [
     name: "Quenmatkhau",
     component: Quenmatkhau,
   },
+  {
+    path: "/Combo4loaiche",
+    name: "Combo",
+    component: Combo,
+  },
+  {
+    path: "/Chethapcam",
+    name: "Chethapcam",
+    component: Chethapcam,
+  },
+  {
+    path: "/Chedaudo",
+    name: "Chedaudo",
+    component: Chedaudo,
+  },
+  {
+    path: "/Chebap",
+    name: "Chebap",
+    component: Chebap,
+  },
+  {
+    path: "/Chemeden",
+    name: "Chemeden",
+    component: Chemeden,
+  },
+ 
   {
     path: "/UpdateUser/:id",
     name: "UpdateUser",
