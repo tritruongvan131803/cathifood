@@ -7,7 +7,7 @@ import { RouterLink } from "vue-router";
     <div class="bannergioithieu">
       <div class="gioithieu">
         <h1>GIỚI THIỆU</h1>
-        <div class="breadcrumb">
+        <div class="breadcrumb" >
           <RouterLink to="/Home">Trang chủ</RouterLink> &nbsp; ❯ &nbsp; Giới
           thiệu
         </div>

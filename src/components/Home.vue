@@ -1,14 +1,14 @@
 <template>
     <div>
-        <Banner></Banner>
+        <BannerBootstrap></BannerBootstrap>
     </div>
 </template>
 
 <script>
-    import Banner from './Banner.vue';
+import BannerBootstrap from './BannerBootstrap.vue';
     export default{
         components:{
-            Banner,
+            BannerBootstrap,
         }
     }
 </script>

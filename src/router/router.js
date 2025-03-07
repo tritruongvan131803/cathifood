@@ -8,7 +8,6 @@ import Dangki from "../components/Dangki.vue";
 import Dangnhap from "../components/Dangnhap.vue";
 import Quenmatkhau from "../components/Quenmatkhau.vue";
 import UpdateUser from "../components/UpdateUser.vue";
-import App from "../App.vue";
 import Combo from "../product/Combo.vue";
 import Chedaudo from "../product/Chedaudo.vue";
 import Chebap from "../product/Chebap.vue";

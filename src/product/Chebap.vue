@@ -5,7 +5,7 @@
       <RouterLink to="/Home" style="color: black; margin-left: 60px"
         >Trang chủ</RouterLink
       >
-      &nbsp; ❯ &nbsp; Chè ăn liền &nbsp; ❯ &nbsp; Chè bắp
+      &nbsp; ❯ &nbsp; <router-link to="/Sanpham" style="color: black;">Chè ăn liền</router-link> &nbsp; ❯ &nbsp; Chè bắp Hội An ăn liền
     </div>
     <hr />
     <br />

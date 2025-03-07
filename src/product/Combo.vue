@@ -5,7 +5,7 @@
       <RouterLink to="/Home" style="color: black; margin-left: 60px"
         >Trang chủ</RouterLink
       >
-      &nbsp; ❯ &nbsp; Chè ăn liền &nbsp; ❯ &nbsp;Combo Hoian Sweet Hoian | Ngọt ngào Hội An
+      &nbsp; ❯ &nbsp; <router-link to="/Sanpham" style="color: black;">Chè ăn liền</router-link> &nbsp; ❯ &nbsp;Combo Hoian Sweet Hoian | Ngọt ngào Hội An
     </div>
     <hr />
     <br />
@@ -112,17 +112,10 @@
       <br />
       <hr style="color: #2e3191" />
       <br />
-      Bao bọc bởi dòng Thu Bồn thơ mộng, cồn cát Cẩm Nam từ xưa đã nổi tiếng với
-      những ruộng bắp xanh mướt vươn cao. Phù sa từ dòng sông hiền hoà và thổ
-      nhưỡng màu mỡ của vùng đất này đã cho ra những trái bắp vàng đều, dẻo
-      ngọt, tạo nên hương vị độc đáo cho món chè bắp Hội An.
+      Combo Hoian Sweet Hoian (Ngọt ngào Hội An) là sự kết hợp của 4 loại chè đặc biệt được CaThiFood lựa chọn và đề xuất cho bạn. Với hộp combo mang đậm dấu ấn văn hoá Hội An, đây chắc chắn là món quà tặng vô cùng ý nghĩa và phù hợp.
       <br />
       <br />
-      – Khối lượng: 120g x 2 túi
-      <br />
-      – Thành phần dinh dưỡng phù hợp: bắp, đường, nước, cốt dừa, bột béo, tinh
-      bột biến tính. Corn, water, coconut milk, sugar, powdered creamer,
-      modified starch.
+      – 1 hộp Chè mè đen (xí mà) + 1 hộp Chè đậu đỏ + 1 hộp chè bắp + 1 hộp chè thập cẩm
       <br />
       – 100% Nguyên liệu tươi ngon được chọn lọc kĩ càng, chế biến theo tiêu
       chuẩn vệ sinh an toàn thực phẩm
@@ -156,7 +149,7 @@
       – Không dùng cho những người bị dị ứng với các thành phần ghi trên bao bì.
       <br />
       <br />
-      #Hoian #PhocoHoiAn #Cheanlien #Chebap
+      #Hoian #PhocoHoiAn #Cheanlien #HoiansweetHoian 
       <br />
       <br />
       <div class="cauhoithuonggap">
@@ -202,27 +195,27 @@
       <div class="product" style="margin: 20px 0px; justify-content: left;">
         <div class="producta">
           <router-link
-            to="/Combo4loaiche"
+            to="/Chebap"
             style="text-decoration: none; color: black"
           >
             <div class="ab">
               <img
                 class="default-img"
-                src="https://product.hstatic.net/200000418743/product/hop_combo_1024d70f32984bcebb53b16a23b05097_master.png"
+                src="https://product.hstatic.net/200000418743/product/ctf_che_bap_052b6de09db14b82a417b5ce5468b7f2_master.png"
                 alt=""
               />
               <img
                 class="hover-img"
-                src="https://product.hstatic.net/200000418743/product/dsc06938_8b8ebd47e2f64447a6bf8eab1752c899_master.jpg"
+                src="https://product.hstatic.net/200000418743/product/dsc06929-edit-edit_8b31fa38596b4064ad50c6dc31f590f9_master.jpg"
                 alt=""
               />
               <p class="a" style="margin-top: 20px; font-size: 20px">
-                Combo Hoian Sweet Hoian | Ngọt ngào Hội An
+                Chè bắp Hội An ăn liền
               </p>
             </div>
           </router-link>
           <div class="price">
-            <p style="font-weight: bold; font-size: 19px">150.000</p>
+            <p style="font-weight: bold; font-size: 19px">35.000</p>
             <div class="addcart">
               <button style="font-weight: 600">THÊM VÀO GIỎ</button>
               <i class="ri-shopping-bag-fill"></i>

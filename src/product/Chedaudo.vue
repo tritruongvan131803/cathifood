@@ -5,7 +5,7 @@
       <RouterLink to="/Home" style="color: black; margin-left: 60px"
         >Trang chủ</RouterLink
       >
-      &nbsp; ❯ &nbsp; Chè ăn liền &nbsp; ❯ &nbsp; Chè bắp
+      &nbsp; ❯ &nbsp; <router-link to="/Sanpham" style="color: black;">Chè ăn liền</router-link> &nbsp; ❯ &nbsp;  Chè đậu đỏ ăn liền
     </div>
     <hr />
     <br />
@@ -13,27 +13,27 @@
     <div class="bapcolumn">
       <div class="bapleft">
         <img
-          src="https://product.hstatic.net/200000418743/product/ctf_che_bap_052b6de09db14b82a417b5ce5468b7f2_master.png"
+          src="https://product.hstatic.net/200000418743/product/ctf_che_dau_do_ec329c9bee544069bb5fd02939892dd9_master.png"
           alt=""
         />
         <div class="hinhnho3">
           <img
-            src="https://product.hstatic.net/200000418743/product/ctf_che_bap_052b6de09db14b82a417b5ce5468b7f2_compact.png"
+            src="https://product.hstatic.net/200000418743/product/ctf_che_dau_do_ec329c9bee544069bb5fd02939892dd9_master.png"
             alt=""
           />
           <img
-            src="https://product.hstatic.net/200000418743/product/dsc06929-edit-edit_8b31fa38596b4064ad50c6dc31f590f9_compact.jpg"
+            src="https://product.hstatic.net/200000418743/product/dsc06985-edi_fb99f62c376e45c4a56ddabf20ada4c3_compact.jpg"
             alt=""
           />
           <img
-            src="https://product.hstatic.net/200000418743/product/dsc06877-edit_3ae264e81dad4a188047d9a51e3f738f_compact.jpg"
+            src="https://product.hstatic.net/200000418743/product/dsc06880-edit_e8a5b5f31ca442a097ecee73277b34aa_compact.jpg"
             alt=""
           />
         </div>
       </div>
       <hr />
       <div class="bapcenter">
-        <h1 style="color: #2e3191">Chè bắp Hội An ăn liền</h1>
+        <h1 style="color: #2e3191">Chè đậu đỏ ăn liền</h1>
         <p style="font-size: 20px">
           Tình trạng:
           <span style="color: #e70505; font-size: 20px; font-weight: bold"
@@ -134,17 +134,12 @@
       <br />
       <hr style="color: #2e3191" />
       <br />
-      Bao bọc bởi dòng Thu Bồn thơ mộng, cồn cát Cẩm Nam từ xưa đã nổi tiếng với
-      những ruộng bắp xanh mướt vươn cao. Phù sa từ dòng sông hiền hoà và thổ
-      nhưỡng màu mỡ của vùng đất này đã cho ra những trái bắp vàng đều, dẻo
-      ngọt, tạo nên hương vị độc đáo cho món chè bắp Hội An.
+      Trong quan niệm của người Á Đông, đỏ không chỉ đơn thuần là một sắc thái màu. Đó còn là biểu tượng của may mắn, hạnh phúc và sự phồn thịnh. Các vật dụng, món ăn có màu đỏ được ưa dùng trong những ngày vui như lễ Tết, tiệc cưới. Chè đậu đỏ dường như biểu thị trọn vẹn ý nghĩa của màu sắc đặc biệt này.
       <br />
       <br />
       – Khối lượng: 120g x 2 túi
       <br />
-      – Thành phần dinh dưỡng phù hợp: bắp, đường, nước, cốt dừa, bột béo, tinh
-      bột biến tính. Corn, water, coconut milk, sugar, powdered creamer,
-      modified starch.
+      – Thành phần dinh dưỡng phù hợp: Đậu đỏ, nước, cốt dừa, đường, bột béo, tinh bột biến tính. Red beans, water, coconut milk, sugar, powdered creamer, modified starch.
       <br />
       – 100% Nguyên liệu tươi ngon được chọn lọc kĩ càng, chế biến theo tiêu
       chuẩn vệ sinh an toàn thực phẩm
@@ -310,27 +305,27 @@
         </div>
         <div class="producta">
           <router-link
-            to="/Chedaudo"
+            to="/Combo4loaiche"
             style="text-decoration: none; color: black"
           >
             <div class="ab">
               <img
-                src="https://product.hstatic.net/200000418743/product/ctf_che_dau_do_ec329c9bee544069bb5fd02939892dd9_master.png"
+                class="default-img"
+                src="https://product.hstatic.net/200000418743/product/ctf_che_bap_052b6de09db14b82a417b5ce5468b7f2_master.png"
                 alt=""
               />
               <img
                 class="hover-img"
-                src="https://product.hstatic.net/200000418743/product/dsc06985-edi_f3bcbd3594634201a012be2ba02c513d_master.jpg"
+                src="https://product.hstatic.net/200000418743/product/dsc06929-edit-edit_8b31fa38596b4064ad50c6dc31f590f9_master.jpg"
                 alt=""
               />
               <p class="a" style="margin-top: 20px; font-size: 20px">
-                Chè đậu đỏ ăn liền
+                Chè bắp Hội An ăn liền
               </p>
             </div>
           </router-link>
-
           <div class="price">
-            <p style="font-weight: bold; font-size: 20px">35.000</p>
+            <p style="font-weight: bold; font-size: 19px">35.000</p>
             <div class="addcart">
               <button style="font-weight: 600">THÊM VÀO GIỎ</button>
               <i class="ri-shopping-bag-fill"></i>

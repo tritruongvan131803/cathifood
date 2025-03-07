@@ -5,7 +5,8 @@
       <RouterLink to="/Home" style="color: black; margin-left: 60px"
         >Trang chủ</RouterLink
       >
-      &nbsp; ❯ &nbsp; Chè ăn liền &nbsp; ❯ &nbsp; Chè bắp
+      &nbsp; ❯ &nbsp; <router-link to="/Sanpham" style="color: black;">Chè ăn liền</router-link> &nbsp; ❯ &nbsp; Chè mè đen ăn liền (xí mà Hội
+      An)
     </div>
     <hr />
     <br />
@@ -13,27 +14,27 @@
     <div class="bapcolumn">
       <div class="bapleft">
         <img
-          src="https://product.hstatic.net/200000418743/product/ctf_che_bap_052b6de09db14b82a417b5ce5468b7f2_master.png"
+          src="https://product.hstatic.net/200000418743/product/ctf_che_me_den_d6f8e46f7f0b4c2ab6bd7473ef836076_master.png"
           alt=""
         />
         <div class="hinhnho3">
           <img
-            src="https://product.hstatic.net/200000418743/product/ctf_che_bap_052b6de09db14b82a417b5ce5468b7f2_compact.png"
+            src="https://product.hstatic.net/200000418743/product/ctf_che_me_den_d6f8e46f7f0b4c2ab6bd7473ef836076_master.png"
             alt=""
           />
           <img
-            src="https://product.hstatic.net/200000418743/product/dsc06929-edit-edit_8b31fa38596b4064ad50c6dc31f590f9_compact.jpg"
+            src="https://product.hstatic.net/200000418743/product/dsc06865-edit-edit_f48aec9cf60c4e008e48e45e1f41bbc6_master.jpg"
             alt=""
           />
           <img
-            src="https://product.hstatic.net/200000418743/product/dsc06877-edit_3ae264e81dad4a188047d9a51e3f738f_compact.jpg"
+            src="https://product.hstatic.net/200000418743/product/dsc06872-edit_62553db534b54fee96fcb706aa396157_compact.jpg"
             alt=""
           />
         </div>
       </div>
       <hr />
       <div class="bapcenter">
-        <h1 style="color: #2e3191">Chè bắp Hội An ăn liền</h1>
+        <h1 style="color: #2e3191">Chè mè đen ăn liền (xí mà Hội An)</h1>
         <p style="font-size: 20px">
           Tình trạng:
           <span style="color: #e70505; font-size: 20px; font-weight: bold"
@@ -134,17 +135,16 @@
       <br />
       <hr style="color: #2e3191" />
       <br />
-      Bao bọc bởi dòng Thu Bồn thơ mộng, cồn cát Cẩm Nam từ xưa đã nổi tiếng với
-      những ruộng bắp xanh mướt vươn cao. Phù sa từ dòng sông hiền hoà và thổ
-      nhưỡng màu mỡ của vùng đất này đã cho ra những trái bắp vàng đều, dẻo
-      ngọt, tạo nên hương vị độc đáo cho món chè bắp Hội An.
+      Xí Mà (Chí mà, hay Chí mà phù) là tên gọi được người Hội An sử dụng để
+      nhắc đến loại chè mè đen du nhập vào CẢng THỊ này từ hàng trăm năm trước.
+      Kết hợp giữa mè đen với các nguyên liệu bản địa, Xí Mà có cấu trúc sánh
+      mịn, vị dịu nhẹ, không quá ngọt và ngon nhất khi dùng nóng.
       <br />
       <br />
       – Khối lượng: 120g x 2 túi
       <br />
-      – Thành phần dinh dưỡng phù hợp: bắp, đường, nước, cốt dừa, bột béo, tinh
-      bột biến tính. Corn, water, coconut milk, sugar, powdered creamer,
-      modified starch.
+      – Thành phần dinh dưỡng phù hợp: Mè đen (50%), khoai lang (15%), rau má (5%), thục địa, bột sắn dây, đường. Black sesame (50%), sweet potato (15%), centella Asiatica, rehmannia glutinosa, kudzu powder, sugar.
+
       <br />
       – 100% Nguyên liệu tươi ngon được chọn lọc kĩ càng, chế biến theo tiêu
       chuẩn vệ sinh an toàn thực phẩm
@@ -221,7 +221,7 @@
     <br />
     <div style="margin: 25px" class="sanphamlienquan">
       <h1 style="color: #2e3191">Sản phẩm liên quan</h1>
-      <div class="product" style="margin: 20px 0px; justify-content: left;">
+      <div class="product" style="margin: 20px 0px; justify-content: left">
         <div class="producta">
           <router-link
             to="/Combo4loaiche"
@@ -253,26 +253,27 @@
         </div>
         <div class="producta">
           <router-link
-            to="/Chemeden"
+            to="/Combo4loaiche"
             style="text-decoration: none; color: black"
           >
             <div class="ab">
               <img
-                src="https://product.hstatic.net/200000418743/product/ctf_che_me_den_d6f8e46f7f0b4c2ab6bd7473ef836076_master.png"
+                class="default-img"
+                src="https://product.hstatic.net/200000418743/product/ctf_che_bap_052b6de09db14b82a417b5ce5468b7f2_master.png"
                 alt=""
               />
               <img
                 class="hover-img"
-                src="https://product.hstatic.net/200000418743/product/dsc06865-edit-edit_099f380e8e0e4dc2a985632228fee846_master.jpg"
+                src="https://product.hstatic.net/200000418743/product/dsc06929-edit-edit_8b31fa38596b4064ad50c6dc31f590f9_master.jpg"
                 alt=""
               />
               <p class="a" style="margin-top: 20px; font-size: 20px">
-                Chè mè đen ăn liền (xí mà Hội An)
+                Chè bắp Hội An ăn liền
               </p>
             </div>
           </router-link>
           <div class="price">
-            <p style="font-weight: bold; font-size: 20px">35.000</p>
+            <p style="font-weight: bold; font-size: 19px">35.000</p>
             <div class="addcart">
               <button style="font-weight: 600">THÊM VÀO GIỎ</button>
               <i class="ri-shopping-bag-fill"></i>

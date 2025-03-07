@@ -1,7 +1,7 @@
 <template>
   <div class="tintuc">
     <hr />
-    <div class="breadcrumb">
+    <div class="breadcrumb" style="padding: 0; margin: 0;">
       <RouterLink to="/Home" style="color: black; margin-left: 60px"
         >Trang chủ</RouterLink
       >
@@ -13,8 +13,9 @@
       <div class="thongtin">
         <h1>Thông tin liên hệ</h1>
         <div class="dc" style="margin-top: 15px">
-          <div class="information">
-            <i class="ri-map-pin-line"></i>
+      
+          <div class="information">  
+            <i class="ri-map-pin-line"></i>     
             <div class="diachi">
               <h3>Địa chỉ</h3>
               <p style="color: #7f8da7">
@@ -53,20 +54,36 @@
             tôi sẽ liên lạc lại với bạn sớm nhất có thể.
           </p>
           <div class="formquestion">
-            <input type="text" placeholder="Tên của bạn" v-model="form.name">
-            <div class="Email">
-              <input type="text" placeholder="Email của bạn" v-model="form.email">
-              <input
-                style="margin-right: -10px"
+            <input type="text" placeholder="Họ và tên" v-model="form.name" />
+            <p v-if="errors.name">{{ errors.name }}</p>
+            <div class="Email" style="display: flex; gap: 10px;">
+              <div class="emaila" style="width: 50%;">
+                <input
+                type="text"
+                placeholder="Email của bạn"
+                v-model="form.email"
+              />
+              <p v-if="errors.email">{{ errors.email }}</p>   
+              </div>
+              
+              <div class="sdt" style="width: 50%;">
+                <input
                 type="text"
                 placeholder="Số điện thoại của bạn"
-                v-model="form.sdt">
+                v-model="form.sdt"
+              />
+              <p v-if="errors.sdt">{{ errors.sdt }}</p>
+              </div>
+             
             </div>
+          
             <input
               type="text"
               placeholder="Nội dung"
               style="padding-bottom: 120px"
-              v-model="form.noidung">
+              v-model="form.noidung"
+            />
+            <p v-if="errors.noidung">{{ errors.noidung }}</p>
           </div>
           <button @click="btnnoidung()">GỬI CHO CHÚNG TÔI</button>
         </div>
@@ -87,23 +104,61 @@
 </template>
 
 <script>
+import axios from "axios";
+import Swal from "sweetalert2";
 export default {
   data() {
     return {
       form: {
         name: "",
-        email:"",
-        sdt:"",
-        noidung:""
+        email: "",
+        sdt: "",
+        noidung: "",
       },
+      errors: {},
     };
   },
-  methods:{
-    btnnoidung(){
-      console.log(this.form);
-      
-    }
-  }
+  methods: {
+    async btnnoidung() {
+      if (this.Validatethacmac()) {
+        let thacmacItem = {
+          name: this.form.name,
+          email: this.form.email,
+          sdt: this.form.sdt,
+          noidung: this.form.noidung,
+        };
+        let result = await axios.post(
+          "http://localhost:3000/thacmac",
+          thacmacItem
+        );
+        if (result.status == 201) {
+          Swal.fire({
+            title: "Thành công!",
+            text: "Cảm ơn bạn đã gửi thắc mắc cho chúng tôi",
+            icon: "success",
+            timer: 2000,
+          });
+        }
+      }
+    },
+    Validatethacmac() {
+      const errors = {};
+      if (!this.form.name) {
+        errors.name = "Bạn chưa nhập tên";
+      }
+      if (!this.form.email) {
+        errors.email = "Bạn chưa nhập email";
+      }
+      if (!this.form.sdt) {
+        errors.sdt = "Bạn chưa nhập sdt";
+      }
+      if (!this.form.noidung) {
+        errors.noidung = "Bạn chưa nhập nội dung";
+      }
+      this.errors = errors;
+      return Object.keys(errors).length === 0;
+    },
+  },
 };
 </script>
 <style>
@@ -128,12 +183,15 @@ export default {
   display: flex;
 }
 .information i {
-  margin-right: 10px;
+  margin-right: 40px;
   align-content: center; /* canh theo chiều dọc */
-  font-size: 20px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
   border-radius: 50%;
-  padding: 6px;
-  border: 1px solid #7f8da7;
+  
+  
+
 }
 .question {
   margin-top: 40px;
@@ -165,5 +223,8 @@ export default {
   margin: 10px;
   border: 0.5px solid #9a9ea5;
   background-color: white;
+}
+.formquestion p{
+  margin-left: 10px;
 }
 </style>

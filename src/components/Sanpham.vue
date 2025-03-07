@@ -1,7 +1,7 @@
 <template>
   <div class="sanpham">
     <hr />
-    <div class="breadcrumb">
+    <div class="breadcrumb" style="padding: 0; margin: 0;">
       <RouterLink to="/Home" style="color: black; margin-left: 60px"
         >Trang chủ</RouterLink
       >
@@ -15,6 +15,11 @@
       />
       <h1>Tất cả sản phẩm</h1>
     </div>
+
+    <br>
+<!-- sản phẩm dùng bootstrap -->
+<b style="margin-left: 70px; ">5</b> sản phẩm 
+
     <div class="product">
       <div class="producta">
       <router-link to="/Combo4loaiche" style="text-decoration: none; color: black;">

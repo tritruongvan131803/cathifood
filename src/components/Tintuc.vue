@@ -1,7 +1,7 @@
 <template>
   <div class="tintuc">
     <hr />
-    <div class="breadcrumb">
+    <div class="breadcrumb" style="padding: 0; margin: 0;">
       <RouterLink to="/Home" style="color: black; margin-left: 60px"
         >Trang chủ</RouterLink
       >

@@ -1,17 +1,26 @@
-<script setup>
-import { RouterView } from 'vue-router';
-import Home from './components/Home.vue';
-import UpdateUser from './components/UpdateUser.vue';
-import Headera from './components/Headera.vue';
-import Banner from './components/Banner.vue'
-import Footer from './components/Footer.vue';
+<script>
+import { RouterView } from "vue-router";
+import Footer from "./components/Footer.vue";
+import HeaderBootstrap from "./components/HeaderBootstrap.vue";
+import BannerBootstrap from "./components/BannerBootstrap.vue";
 
+export default {
+  components: {
+    HeaderBootstrap,
+    Footer,
+    BannerBootstrap
+  },
+};
 </script>
 
 <template>
- <div>
-  <Headera></Headera>
-  <RouterView></RouterView>
-  <Footer></Footer>
- </div>
+  <div>
+    <HeaderBootstrap /> <!-- Header xuất hiện trên mọi trang -->
+
+    <!-- Kiểm tra nếu đang ở trang chủ thì hiển thị Banner -->
+    <BannerBootstrap v-if="$route.path === '/'" /> 
+
+    <router-view /> <!-- Nội dung từng trang -->
+    <Footer /> <!-- Footer xuất hiện trên mọi trang -->
+  </div>
 </template>
