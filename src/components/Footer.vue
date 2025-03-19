@@ -37,7 +37,7 @@
       <div class="footer-column">
         <h3>Theo dõi chúng tôi tại</h3>
         <ul>
-          <li><a href="#">Facebook</a></li>
+          <li><a href="https://www.facebook.com/cathifood.vn">Facebook</a></li>
           <li><a href="#">TikTok</a></li>
           <li><a href="#">Shopee</a></li>
         </ul>

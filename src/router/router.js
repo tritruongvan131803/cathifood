@@ -1,5 +1,4 @@
 import { createWebHistory, createRouter } from "vue-router";
-import Home from "../components/Home.vue";
 import Sanpham from "../components/Sanpham.vue";
 import Gioithieu from "../components/Gioithieu.vue";
 import Tintuc from "../components/Tintuc.vue";
@@ -14,11 +13,7 @@ import Chebap from "../product/Chebap.vue";
 import Chemeden from "../product/Chemeden.vue";
 import Chethapcam from "../product/Chethapcam.vue";
 const routes = [
-  {
-    path: "/Home",
-    name: "Home",
-    component: Home,
-  },
+ 
   {
     path: "/Sanpham",
     name: "Sanpham",
@@ -87,9 +82,17 @@ const routes = [
   },
 ];
 
+
+
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition; // Giữ nguyên vị trí cuộn nếu quay lại trang trước đó
+    }
+    return { top: 0, left: 0, behavior: 'smooth' }; // Cuộn lên đầu trang với hiệu ứng mượt
+  }
 });
 
 export default router;

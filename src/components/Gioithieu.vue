@@ -8,7 +8,7 @@ import { RouterLink } from "vue-router";
       <div class="gioithieu">
         <h1>GIỚI THIỆU</h1>
         <div class="breadcrumb" >
-          <RouterLink to="/Home">Trang chủ</RouterLink> &nbsp; ❯ &nbsp; Giới
+          <RouterLink to="/">Trang chủ</RouterLink> &nbsp; ❯ &nbsp; Giới
           thiệu
         </div>
       </div>
