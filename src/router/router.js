@@ -12,12 +12,18 @@ import Chedaudo from "../product/Chedaudo.vue";
 import Chebap from "../product/Chebap.vue";
 import Chemeden from "../product/Chemeden.vue";
 import Chethapcam from "../product/Chethapcam.vue";
+import Giohang from "../components/Giohang.vue";
 const routes = [
  
   {
     path: "/Sanpham",
     name: "Sanpham",
     component: Sanpham,
+  },
+  {
+    path: "/Giohang",
+    name: "Giohang",
+    component: Giohang,
   },
   {
     path: "/Gioithieu",

@@ -2,9 +2,7 @@
   <div class="tintuc">
     <hr />
     <div class="breadcrumb" style="padding: 0; margin: 0;">
-      <RouterLink to="/" style="color: black; margin-left: 60px"
-        >Trang chủ</RouterLink
-      >
+      <RouterLink to="/" style="color: black; margin-left: 60px">Trang chủ</RouterLink>
       &nbsp; ❯ &nbsp; Liên hệ
     </div>
     <hr />
@@ -13,9 +11,8 @@
       <div class="thongtin">
         <h1>Thông tin liên hệ</h1>
         <div class="dc" style="margin-top: 15px">
-      
-          <div class="information">  
-            <i class="ri-map-pin-line"></i>     
+          <div class="information">
+            <i class="ri-map-pin-line"></i>
             <div class="diachi">
               <h3>Địa chỉ</h3>
               <p style="color: #7f8da7">
@@ -23,8 +20,8 @@
               </p>
             </div>
           </div>
-          <div class="information" style="margin-left: 15px">
-            <i class="ri-mail-line"></i>
+          <div class="information" >
+            <i class="fa-regular fa-calendar-days"></i>
             <div class="diachi">
               <h3>Thời gian làm việc</h3>
               <p style="color: #7f8da7">Tất cả các ngày kể cả Lễ, Tết</p>
@@ -39,7 +36,7 @@
               <p style="color: #7f8da7">0777 246 268</p>
             </div>
           </div>
-          <div class="information" style="margin-left: 15px">
+          <div class="information">
             <i class="ri-mail-line"></i>
             <div class="diachi">
               <h3>Email</h3>
@@ -58,46 +55,28 @@
             <p v-if="errors.name">{{ errors.name }}</p>
             <div class="Email" style="display: flex; gap: 10px;">
               <div class="emaila" style="width: 50%;">
-                <input
-                type="text"
-                placeholder="Email của bạn"
-                v-model="form.email"
-              />
-              <p v-if="errors.email">{{ errors.email }}</p>   
+                <input type="text" placeholder="Email của bạn" v-model="form.email" />
+                <p v-if="errors.email">{{ errors.email }}</p>
               </div>
-              
+
               <div class="sdt" style="width: 50%;">
-                <input
-                type="text"
-                placeholder="Số điện thoại của bạn"
-                v-model="form.sdt"
-              />
-              <p v-if="errors.sdt">{{ errors.sdt }}</p>
+                <input type="text" placeholder="Số điện thoại của bạn" v-model="form.sdt" />
+                <p v-if="errors.sdt">{{ errors.sdt }}</p>
               </div>
-             
+
             </div>
-          
-            <input
-              type="text"
-              placeholder="Nội dung"
-              style="padding-bottom: 120px"
-              v-model="form.noidung"
-            />
+
+            <input type="text" placeholder="Nội dung" style="padding-bottom: 120px" v-model="form.noidung" />
             <p v-if="errors.noidung">{{ errors.noidung }}</p>
           </div>
           <button @click="btnnoidung()">GỬI CHO CHÚNG TÔI</button>
         </div>
       </div>
-      <div class="map">
+      <div style="display: flex; justify-content: center; align-items: center;" class="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.567797991128!2d108.33294957591961!3d15.879297244493019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420dd67e6c51bd%3A0x69adfff658cb9651!2zNTg2IEPhu61hIMSQ4bqhaSwgQ-G6qW0gQ2jDonUsIEjhu5lpIEFuLCBRdeG6o25nIE5hbSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1739879668815!5m2!1svi!2s"
-          width="500"
-          height="550"
-          style="border: 0"
-          allowfullscreen
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+          width="600" height="700" style="border: 0" allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
@@ -162,41 +141,59 @@ export default {
 };
 </script>
 <style>
+@media (max-width: 1000px) {
+  .map {
+    margin: auto;
+  }
+  .dc{
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+
 .tintuc .column {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 30px;
   width: 100%;
 }
+
 .tintuc .column .thongtin {
-  width: 60%;
   margin-left: 50px;
 }
+
 .thongtin h1 {
   color: #2e3191;
   margin-bottom: 10px;
 }
+
 .dc {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
+
 .information {
-  width: 60%;
   display: flex;
 }
+
 .information i {
   margin-right: 40px;
-  align-content: center; /* canh theo chiều dọc */
-  font-size: 30px;
+  font-size: 25px;
   display: flex;
   align-items: center;
+  /* canh theo chiều dọc */
   border-radius: 50%;
-  
-  
-
+  transform: translateX(20px);
 }
+.information h3{
+  font-size: 15px;
+  font-weight: bold;
+}
+
 .question {
   margin-top: 40px;
   width: 75%;
 }
+
 .question button {
   padding: 9px 25px;
   border-radius: 30px;
@@ -208,23 +205,28 @@ export default {
   transition: all 0.3s linear;
   /* transition: transform 3.5s ease-in-out; */
 }
+
 .question button:hover {
   background-color: rgb(184, 184, 15);
   /* transform: rotateY(360deg); */
 }
+
 .question p {
   font-size: 19px;
   margin-bottom: 15px;
 }
+
 .Email {
   display: flex;
 }
+
 .formquestion input {
   margin: 10px;
   border: 0.5px solid #9a9ea5;
   background-color: white;
 }
-.formquestion p{
+
+.formquestion p {
   margin-left: 10px;
 }
 </style>

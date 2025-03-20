@@ -77,7 +77,9 @@ export default {
           <div class="d-flex gap-4">
             <a href="#" class="text-dark fs-3"><i class="bx bx-search"></i></a>
             <RouterLink to="/Register" class="text-dark fs-3"><i class="bx bx-user"></i></RouterLink>
+            
             <a href="#" class="text-dark fs-3"><i class="bx bx-cart"></i></a>
+
           </div>
         </div>
       </div>

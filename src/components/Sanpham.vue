@@ -18,8 +18,26 @@
 
     <br />
     <!-- sản phẩm dùng bootstrap -->
-    <b style="margin-left: 70px">5</b> sản phẩm
+    <b style="margin-left: 60px">5</b> sản phẩm
+
     <div class="list_product">
+      <template v-for="(value, index) in list_sanpham">
+        <div class="producta">
+        <img v-bind:src="value.img" alt="" />
+      <div style="height: 90px;" class="ghichu">
+        <p class="fs-5 mt-2">{{ value.ghichu }}</p>
+      </div>
+          <div class="price d-flex justify-content-between">
+            <p class="mt-3">{{ value.price.toLocaleString("vi-VN") }}đ</p>
+            <button class="text-nowrap">
+              <b>THÊM VÀO GIỎ</b> <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+      </template>
+    </div>
+
+    <!-- <div class="list_product">
       <div class="row mb-2 justify-content-center">
         <router-link to=""></router-link>
         <template v-for="(value, index) in list_sanpham">
@@ -44,7 +62,7 @@
           </div>
         </template>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -82,91 +100,90 @@ export default {
       ],
     };
   },
-  mounted() {
-    this.equalizeCardHeights();
-    window.addEventListener("resize", this.equalizeCardHeights);
-  },
-  methods: {
-    equalizeCardHeights() {
-      this.$nextTick(() => {
-        let maxHeight = 0;
-        const cards = document.querySelectorAll(".card-body");
-
-        // Đặt chiều cao về auto trước khi tính toán lại
-        cards.forEach((card) => {
-          card.style.height = "auto";
-        });
-
-        // Tìm chiều cao lớn nhất
-        cards.forEach((card) => {
-          if (card.offsetHeight > maxHeight) {
-            maxHeight = card.offsetHeight;
-          }
-        });
-
-        // Gán chiều cao lớn nhất cho tất cả các card-body
-        cards.forEach((card) => {
-          card.style.height = maxHeight + "px";
-        });
-      });
-    },
-  },
-  beforeDestroy() {
-    window.removeEventListener("resize", this.equalizeCardHeights);
-  },
 };
 </script>
 
 <style>
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
 
-.card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+/* @media sẽ làm resposive */
+@media (max-width: 1000px ){
+  .list_product{
+    display: grid !important; /* Đảm bảo grid được áp dụng */
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .allproduct{
+    display: grid !important; /* Đảm bảo grid được áp dụng */
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+ 
 }
-
-.card-body {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+@media (max-width: 600px ){
+  .list_product{
+    display: grid !important; /* Đảm bảo grid được áp dụng */
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+ 
 }
 .list_product {
-  overflow: hidden; /* Tránh tràn ra ngoài */
-  width: 100%; /* Giữ toàn bộ trong khung */
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr); /* Mặc định là 3 cột */
+
+}
+.producta {
+  padding: 10px;
+  border-radius: 10px;
+
 }
 
-.card-header {
-  height: 300px; /* Đặt chiều cao cố định */
+.producta img {
   width: 100%;
+  height: auto;
+}
+.producta .price {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: #f8f9fa; /* Màu nền nhẹ để hình không bị mất viền */
+}
+.price button {
+  border: none;
+  background-color: white;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+.price button:hover {
+  border: 1px solid rgb(139, 139, 11);
+  padding: 5px;
+  border-radius: 50px;
+}
+.producta:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* .list_product {
+  overflow: hidden; 
+  width: 100%; 
 }
 
 .card-header img {
-  max-width: 100%; /* Đảm bảo hình không vượt quá khung */
-  max-height: 100%; /* Giữ hình ảnh nằm gọn trong card */
-  object-fit: contain; /* Giữ nguyên tỉ lệ, không cắt hình */
-}
+  max-width: 100%; 
+  max-height: 100%; 
+  object-fit: contain; 
+} */
 .allproduct {
   background-color: #f8f8f8;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
 }
 .allproduct img {
-  width: 40%;
+  width: 100%;
 }
 .allproduct h1 {
   color: #2e3191;
   align-content: center;
   margin-left: 40px;
-  font-size: 50px;
+  font-size: 40px;
+  padding: 15px;
 }
 </style>

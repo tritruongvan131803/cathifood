@@ -180,10 +180,25 @@ import { RouterLink } from "vue-router";
 
 <style>
 .lienhe{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   margin-bottom: 50px;
 }
+@media(max-width:1000px){
+ .lienhe{
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+ }
+ .column{
+  display: grid !important;
+  grid-template-columns: repeat(1, 1fr) !important;
+ }
+ .columnright{
+  margin-left: 25px;
+ }
+}
+
 .lienhe4{
   text-align: center;
   padding: 20px 60px;
@@ -201,10 +216,10 @@ font-size: 16px;
   transform: rotateY(360deg);
 }
 .column {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .columnleft {
-  width: 35%;
   margin-top: 50px;
 }
 .abc {
@@ -224,27 +239,26 @@ font-size: 16px;
   font-size: 18px;
 }
 .columnright img {
-  width: 70px;
+  width: 60px;
   height: 60px;
 }
 .columnright .abc {
   margin-left: 0;
   margin-right: 60px;
 }
-.columncenter {
-  width: 30%;
+.columncenter{
   display: flex;
-  margin: 0 15px;
-  justify-content: center; /* Căn giữa theo chiều ngang */
-  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; 
+  /* justify-content laf ngang */
 }
 .columncenter img {
   width: 95%;
-  height: 80%;
+  
 }
 .columnright {
-  margin-top: 50px;
-  width: 35%;
+
+  align-content: center;
+    /* align-content laf doc */
 }
 .columnright .nlcl {
   margin-right: 20px;
